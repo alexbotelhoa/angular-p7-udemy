@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TarefasModule } from './tarefas';
+import { DashboardModule } from './dashboard';
+import { ConversorModule } from './conversor';
+import { CalculadoraModule } from './calculadora';
+import { JogoDaVelhaModule } from './jogo-da-velha';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +15,12 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    TarefasModule,
+    DashboardModule,
+    ConversorModule,
+    CalculadoraModule,
+    JogoDaVelhaModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
